@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:wght@500&family=Shadows+Into+Light&family=Varela+Round&display=swap"
+    rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+
+    /* --------------navbar------------- */
+    .main_nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #dbd4e4;
+    }
+
+    .left_nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_right {
+        display: flex;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 40px;
+        border-radius: 60px;
+        color: black;
+    }
+
+    li a:hover {
+        background-color: #4b208c;
+        color: white;
+
+    }
+
+    /* --------------section------------- */
+
+    .main_section {
+        background-color: #dbd4e4;
+        display: flex;
+
+
+    }
+
+    .main_section .content {
+        font-size: 25px;
+        flex: 60%;
+        margin-left: 90px;
+
+    }
+
+    .main_section .img {
+        flex: 40%;
+    }
+
+    .main_section .img img {
+        height: 380px;
+        width: 380px;
+        border: 5px solid #4b208c;
+        border-radius: 50%;
+    }
+
+    .main_section button {
+        background-color: #4b208c;
+        color: white;
+        font-size: 20px;
+        padding: 10px 30px;
+        border-radius: 40px;
+    }
+
+    button:hover {
+        background-color: #512c89;
+    }
+
+    /* -------------service------------- */
+    .head_service {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .head_service span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .main_service {
+        display: flex;
+        margin-left: 90px;
+        margin-right: 70px;
+        margin-top: 20px;
+    }
+
+    .service_img_row1 {
+        border-radius: 20px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .service_img_row1 h2 {
+        color: #4b208c;
+    }
+
+    .main_service_1 {
+        display: flex;
+        padding-left:75px;
+        padding-right: 75px;
+        margin-top: 20px;
+      
+    }
+    
+    .main_service_1 .service_img_row2{
+        border-radius: 20px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+        width: 80%;
+      
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn button{
+        background-color: #4b208c;
+        color: white;
+        font-size: 20px;
+        padding: 10px 30px;
+        border-radius: 40px;
+
+    }
+    .btn button:hover{
+        background-color: #512c89;
+
+    }
+   
+
+    
+
+  
+
+    @media(max-width:700px){
+        .main_nav,
+        .left_nav,
+        .nav_right,
+        .main_section,
+        .main_service,
+        .main_service_1{
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <div class="main_nav">
+        <div class="left_nav">
+            <img src="images/logo.png" alt="" height="40" width="40" style="border-radius: 50px;">
+            <h2 style="color:#4b208c">Electrochip</h2>
+
+        </div>
+        <div class="nav_right">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+        </div>
+    </div>
+    <!-- -----------section--------------- -->
+    <section class="main_section">
+        <div class="content">
+            <h1>
+                ELECTRICAL <br>
+                SERVICE<br>
+                PROVIDER
+            </h1>
+
+            <p style="font-size: 20px;">It is a long established fact that a reader will be distracted by the<br>
+                readable content of a page when looking at its layout. The point of<br>
+                using Lorem</p>
+
+            <button>
+                contact us
+            </button>
+
+        </div>
+        <div class="img">
+            <img src="images/slider-img.jpg" alt="">
+        </div>
+    </section>
+
+
+    <div class="head_service">
+        <span>Our Services</span>
+        <img src="images/plug.png" alt="">
+    </div>
+    <div class="main_service">
+        <div class="service_img_row1">
+            <img src="images/s1.png" alt="">
+            <h2>Equipment installation</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium expedita ullam voluptas.</p>
+        </div>
+        <div class="service_img_row1">
+            <img src="images/s2.png" alt="">
+            <h2>Windmill Energy </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium expedita ullam voluptas.</p>
+        </div>
+        <div class="service_img_row1">
+            <img src="images/s3.png" alt="">
+            <h2>Equipment Maintenance</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium expedita ullam voluptas.</p>
+        </div>
+    </div>
+    <div class="main_service_1">
+        <div class="service_img_row2">
+            <img src="images/s4.png" alt="">
+            <h2>Equipment installation</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium expedita ullam voluptas.</p>
+        </div>
+
+        <div class="service_img_row2">
+            <img src="images/s5.png" alt="">
+            <h2>Equipment installation</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium expedita ullam voluptas.</p>
+        </div>
+
+    </div>
+    <div class="btn">
+        <button>
+            contact us
+        </button>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box layout</title>
+    <style>
+        header{
+            background-color: cadetblue;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: none;
+        }
+       section{
+        display: flex;
+   
+       }
+        nav{
+            background-color: yellowgreen;
+            flex: 4;
+        }
+        article{
+            background-color: aqua;
+            flex: 10;
+        }
+        div{
+            background-color: blueviolet;
+            flex: 10;
+        }
+        footer{
+            background-color: pink;
+            color: black;
+            text-align: center;
+            height: 80px;
+        
+            padding-top: 10px;
+        
+        }
+        @media (max-width:500px) {
+            section{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 
+            Cities
+        </h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+            <li><a href=""> London</a></li>
+            <li><a href=""> India</a></li>
+            <li><a href="">Goa</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1> London</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore voluptatum sed consectetur, velit, doloribus commodi autem consequatur facere neque voluptates quo enim quis exercitationem provident voluptatibus veritatis aliquam voluptas!</p>
+    </article>
+    <div>
+        <h1> India</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore voluptatum sed consectetur, velit, doloribus commodi autem consequatur facere neque voluptates quo enim quis exercitationem provident voluptatibus veritatis aliquam voluptas!</p>
+    </div>
+</section>
+    <footer>
+        <h3> Footer</h3>
+    </footer>
+
+        
+    
+</body>
+</html>

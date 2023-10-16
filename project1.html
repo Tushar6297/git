@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<style>
+    /* header */
+    header {
+        background-color: aqua;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    /* aside */
+    .vertical {
+        background-color: aquamarine;
+        width: 30%;
+        height: 400px;
+        margin-right: 5px;
+
+    }
+
+    /* horizontal */
+    .horizontal {
+        background-color: orange;
+        height: 400px;
+        width: 70%;
+    }
+
+    .box {
+        display: flex;
+        /* margin-top: 100px; */
+
+        /* border: solid; */
+       
+    }
+
+    .box,div {
+        flex: 50;
+        margin: 5px;
+    }
+    
+
+    #middle {
+        display: flex;
+
+    }
+    @media(max-width:700px){
+        .box, #middle {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <!-- aside  -->
+    <div id="middle">
+        <aside class="vertical">
+            <h2 style="text-align: center; margin-top: 200px;">Aside</h2>
+        </aside>
+
+        <!-- article -->
+        <article class="horizontal">
+            <h2 style="text-align: center; margin-top: 120px;" > Article</h2>
+            <div class="box">
+                <div>
+                    <img src="assets/images/agro.jpg" alt="" height="200px" width="100%">
+                </div>
+                <div>
+                    <img src="assets/images/agro.jpg" alt="" height="200px" width="100%">
+                </div>
+                <div>
+                    <img src="assets/images/agro.jpg" alt="" height="200px" width="100%">
+                </div>
+            </div>
+
+
+        </article>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h2 style="text-align: center; padding: 20px; background-color: blueviolet; margin-top: 5px;">footer content..
+        </h2>
+    </footer>
+
+
+
+</body>
+
+</html>
